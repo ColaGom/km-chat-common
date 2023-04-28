@@ -12,7 +12,8 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Chat(
     val id: Long,
-    val userId: Long,
+    val room: ChatRoom,
+    val user: ChatUser,
     val message: String,
     val sentAt: LocalDateTime
 )

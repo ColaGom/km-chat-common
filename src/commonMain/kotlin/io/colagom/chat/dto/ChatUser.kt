@@ -5,11 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ChatUser(
     val id: Long,
-    val name: String,
-    val role: ChatUserRole
+    val room: ChatRoom,
+    val name: String
 )
-
-enum class ChatUserRole {
-    OWNER,
-    USER
-}
