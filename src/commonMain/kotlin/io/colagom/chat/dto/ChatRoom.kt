@@ -16,6 +16,10 @@ data class ChatRoom(
     val id: Long,
     val name: String,
     val limit: Int,
-    val users: List<ChatUser>,
-    val createdAt: LocalDateTime
-)
+    val users: MutableList<ChatUser>,
+    val createdAt: LocalDateTime,
+) {
+    fun addUser(user: ChatUser) {
+        users.add(user)
+    }
+}
