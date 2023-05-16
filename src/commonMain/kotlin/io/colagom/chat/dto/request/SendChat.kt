@@ -1,9 +1,9 @@
-package io.colagom.chat.dto
+package io.colagom.chat.dto.request
 
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ChatRequest(
+data class SendChat(
     val type: ChatType,
     val message: String
 )
