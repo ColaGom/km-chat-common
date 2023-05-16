@@ -3,7 +3,13 @@ package io.colagom.chat.dto
 import kotlinx.serialization.Serializable
 
 @Serializable
-class ChatMessage(
-    val isMine: Boolean,
+data class ChatRequest(
+    val type: ChatType,
     val message: String
 )
+
+enum class ChatType {
+    JOIN,
+    LEAVE,
+    MESSAGE
+}
