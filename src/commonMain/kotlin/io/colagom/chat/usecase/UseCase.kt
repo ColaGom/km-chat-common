@@ -5,3 +5,5 @@ interface UseCase<INPUT, OUTPUT> {
 }
 
 typealias VoidUseCase<OUTPUT> = UseCase<Unit, OUTPUT>
+
+suspend fun <T> VoidUseCase<T>.execute(): T = execute(Unit)

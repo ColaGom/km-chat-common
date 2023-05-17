@@ -1,7 +1,5 @@
 package io.colagom.chat.usecase
 
-import io.colagom.chat.dto.ChatRoom
+import io.colagom.chat.model.ChatRoom
 
-interface GetAllChatRoomUseCase : VoidUseCase<List<ChatRoom>> {
-    override suspend fun execute(input: Unit): List<ChatRoom>
-}
+interface GetAllChatRoomUseCase : VoidUseCase<List<ChatRoom>>
