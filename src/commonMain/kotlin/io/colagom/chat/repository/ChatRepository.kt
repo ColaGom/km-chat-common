@@ -1,6 +1,6 @@
 package io.colagom.chat.repository
 
-import io.colagom.chat.dto.Chat
+import io.colagom.chat.model.Chat
 
 interface ChatRepository {
     fun getAllByRoomId(roomId: Long): List<Chat>

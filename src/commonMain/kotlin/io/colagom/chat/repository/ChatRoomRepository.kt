@@ -1,6 +1,6 @@
 package io.colagom.chat.repository
 
-import io.colagom.chat.dto.ChatRoom
+import io.colagom.chat.model.ChatRoom
 
 interface ChatRoomRepository {
     fun getById(id: Long): ChatRoom?

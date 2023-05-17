@@ -1,4 +1,4 @@
-package io.colagom.chat.dto
+package io.colagom.chat.model
 
 import kotlinx.serialization.Serializable
 
